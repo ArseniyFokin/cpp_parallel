@@ -1,0 +1,6 @@
+venv/
+*.dSYM
+.vscode
+
+mpi
+open_mp
