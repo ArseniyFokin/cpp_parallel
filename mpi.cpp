@@ -28,9 +28,9 @@ int main(int argc, char* argv[]) {
 	matrix_2 = new double[N * N];
 	matrix_result = new double[N * N];
 
-    MPI_Init(&argc, &argv);
-    MPI_Comm_rank(MPI_COMM_WORLD, &runk);
-    MPI_Comm_size(MPI_COMM_WORLD, &max_runk);
+	MPI_Init(&argc, &argv);
+	MPI_Comm_rank(MPI_COMM_WORLD, &runk);
+	MPI_Comm_size(MPI_COMM_WORLD, &max_runk);
 
 	if (runk == 0) {
 		for (int i = 0; i < N; i++)
